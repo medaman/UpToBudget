@@ -1,0 +1,22 @@
+{
+  "development": {
+    "username": "r06ew18uch4f7bbn",
+    "password": "q9zg4q0uljiutcjt",
+    "database": "u4mlh3o4rvpo9513",
+    "port" : 3306,
+    "host": "uoa25ublaow4obx5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect" : "mysql"
+  },
+  "test": {
+    "username" : "r06ew18uch4f7bbn",
+    "password" : "q9zg4q0uljiutcjt",
+    "database": "u4mlh3o4rvpo9513",
+    "port" : 3306,
+    "host" : "uoa25ublaow4obx5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect" : "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}

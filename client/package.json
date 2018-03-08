@@ -1,0 +1,26 @@
+{
+  "name": "sern",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "eslintConfig": {
+        "env": {
+          "browser": true,
+          "commonjs": true,
+          "es6": true,
+          "jquery": true
+        }
+    },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-easy-chart": "^0.3.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

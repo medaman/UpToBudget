@@ -1,0 +1,17 @@
+nav.navbar.navbar-default {
+  margin-bottom: 0;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.navbar {
+  background-color: #E9E4D0 !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #5bc0de !important;
+  border-radius: 5px;
+  color: white !important;
+}

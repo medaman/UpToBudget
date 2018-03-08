@@ -1,0 +1,36 @@
+<h1>You are logged in! </h1>
+<h3>Hi {{user.client_name}}. Welcome to your profile.</h3>
+{{#if user.monthly_income}}
+  <p>Thanks for setting up your account.</p>
+  <p>Monthly Income : {{user.monthly_income}}</p>
+  <p>Phone Number   : {{user.phone_number}}</p>
+  <p>Job Title      : {{user.job_title}}</p>
+  <p>Savings        : {{user.current_savings}}</p>
+{{else}}
+  <p>Please set up your account. Enter your financial information.</p>
+  <form class="create-update-form" action="/api/client?_method=PUT" method="POST">
+
+    <div class="form-group">
+      <label>Monthly Income:</label>
+      <input type="text" id="income" name="income">
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number:</label>
+      <input type="text" id="cell" name="cell">
+    </div>
+
+    <div class="form-group">
+      <label>Job Title:</label>
+      <input type="text" id="job" name="job">
+    </div>
+
+    <div class="form-group">
+      <label>Current Savings:</label>
+      <input type="text" id="saving" name="saving">
+    </div>
+
+    <button value='{{user.google_id}}' name="id" type="submit">Add Information</button>
+  </form>
+{{/if}}
+<a href="/logout/" class="btn btn-danger"><span class="fa fa-google-plus"></span> Log Out</a>
