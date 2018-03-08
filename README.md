@@ -1,43 +1,69 @@
-# Create React Express App
+ # Up To Budget
 
-## About This Boilerplate
+Up To Budget is an app that helps track finances. 
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+  - Provides a clear picture of current finances and helps to forecast future finances.
+  - The app allows the user to set financial goals and helps them work towards achieving those goals.
+  - Various charts and information is displayed on a very user friendly interface to give ultimate transparency to the user
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+# Features!
 
-## Starting the app locally
+  - Sign up and enter financial information
+  - Enter expenses when they occur or set a recurring monthly expense
+  - Get email alerts when expenses are higher than a predefined amount
+  - Set goals and allow the app to help you achieve them.
+  - Change financial and personal settings in case you change jobs or move to a new place.
 
-Start by installing front and backend dependencies. While in this directory, run the following commands:
+# Team Members!
 
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
+* [Adam Husain]
+* Kevin Chao
+* Ashkan Maher
+* Syed Hussaini
 
-After both installations complete, run the following command in your terminal:
+# Tech
 
-```
-yarn start
-```
+Up To Budget uses a number of open source technologies to work effectively:
 
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+* [ReactJS] - Highly customizable framework for creating very robust applications. Developed by Facebook.
+* [HTML] - The standard markup language for creating web pages and web applications
+* [CSS] - Stylesheet language used to describe presentation
+* [Javascript] - Powerful web based programming language
+* [jQuery] - Extremely Powerful and Efficient Javascript Library
+* [Bootstrap] - Front-end web framework for designing websites and web applications
+* [Node.js] - evented I/O for the backend
+* [Express] - fast node.js network app framework
+* [Sequelize] - Promise-based ORM for Node.js to create databases
+* [MySQL] - Powerful open-source relational database management system
+* [Google Auth] - Highly secure OAuth2 technology for managing user login
 
-## Deployment (Heroku)
+APIs built in house include:
+* Finance Controller API - Pull and Push information about finances
+* Settings Controller API - Pull and Push settings information
+* Goals Controller API - Pull and Push all information pertaining to goals.
 
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
+# Database Structure
+* Index Model
+* User Database - Database of all users of the app
+* Expenses Database - Database of all Expenses for all users
+* Goal Database - Database of all goals for all users
+* Settings Database - Database of all settings for all users
 
-1. Build the React app for production by running the following command:
+# Heroku Address
 
-```
-yarn build
-```
-> Note: A yarn build will be required to register any new Post requests from any front-end JavaScript to to prevent any proxy server errors.
+https://uptobudget.herokuapp.com/
 
-2. Add and commit all changes to git
-
-3. Push to Heroku
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+   [ReactJS]: <https://reactjs.org/>
+   [HTML]: <https://www.w3schools.com/html/>
+   [CSS]: <https://www.w3schools.com/css/>
+   [Javascript]: <https://www.w3schools.com/js/>
+   [jQuery]: <http://jquery.com>
+   [Bootstrap]: <http://getbootstrap.com/>
+   [Node.js]: <http://nodejs.org>
+   [Express]: <http://expressjs.com>
+   [Sequelize]: <http://docs.sequelizejs.com/>
+   [MySQL]: <https://www.mysql.com>
+   [Google Auth]: <https://developers.google.com/identity/protocols/OAuth2>
+   
+   [Adam Husain]: <https://github.com/medaman>
+   
